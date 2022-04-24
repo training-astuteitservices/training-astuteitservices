@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>CSS backgrounds</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 500px;
+            }
+            #bg-color{
+                background-color: teal;
+            }
+            #bg-image{
+                box-shadow: 0 0 10px black;
+                padding: 15px;
+                width: 500px;
+                color:  yellowgreen;
+                background-image: url("../IMG_3092.jpg");
+            }
+            #bg-repeat{
+                width: 500px;
+                height: 300px;
+                box-shadow: 0 0 10px black;
+                background-color: lightsalmon;
+                background-image: url("../images.jpg");
+                background-repeat: no-repeat;
+                background-position: top right;
+                background-attachment: scroll;
+            }
+            #bg-position {
+                width: 500px;
+                height: 500px;
+                box-shadow: 0 0 10px black;
+                background: lightgreen url("../images.jpg") repeat-x bottom left;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <h2>background-color</h2>
+
+        <div id="bg-color">
+            <h1>I am with teal color backgrounds</h1>
+        </div>
+        <h2>background-image</h2>
+
+        <div id="bg-image">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam optio suscipit ullam in officiis explicabo libero, dolorem ea, rerum nam perferendis, cumque consequatur harum nobis aliquam soluta obcaecati dolore. Illum!</p>
+        </div>
+        <h2>background-repeat</h2>
+
+        <div id="bg-repeat">
+        </div>
+        <h2>background-position</h2>
+
+        <div id="bg-position">
+           
+        </div>
+
+    </body>
+</html>

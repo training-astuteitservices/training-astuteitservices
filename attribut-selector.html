@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <!-- <link href="cssStyles.css" type="text/css" rel="stylesheet"/> -->
+        <style>
+            input[type="text"]{
+                background-color: aqua;
+            }
+            input[type="password"]{
+                background-color: green;
+            }
+            input[type="password"]:focus{
+                background-color: blue;
+            }
+            input[type="submit"]{
+                background-color: red;
+                transition: all 0.5s;
+            }
+            input[type="submit"]:hover{
+                background-color: purple;
+                color: white;
+                padding: 25px 30px;
+            }
+        </style>
+    </head>
+    <body align="center">
+        <h1>Login Form</h1>
+        <form align="center">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Enter user name</td>
+                        <td><input type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Enter Password</label></td>
+                        <td><input type="password"/></td>
+                    </tr>
+                    <tr>
+                        <td>If New user <a href="Reg.html">Click</a> to SignUp</td>
+                        <td><input type="submit" value="login"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

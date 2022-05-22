@@ -1,0 +1,8 @@
+.btn-primary{
+   background: linear-gradient(45deg,grey,green);
+   border-radius: 30px;
+}
+.btn-danger{
+   background: linear-gradient(45deg,grey,violet);
+   border-radius: 30px;  
+}

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+            function validateData() {
+            
+                var uname = document.getElementById('un').value;
+                //alert(uname); 
+                var password = document.getElementById('pw').value;
+                //alert("This is password : "+password);
+
+                var cpassword = document.getElementById('cpw').value;
+                //alert("This is cpassword : "+cpassword);
+
+                if (password=="" || cpassword=="") {
+                    alert("The password or cpassword cannot be empty!");
+                }
+
+                if (password!="" && password==cpassword) {
+                    alert("The password and cpassword are same!");
+                }
+           }
+        </script>
+    </head>
+    <body align="center">
+        <h1 style="font-style: italic;">Registration Form</h1>
+        <form align="center">
+            <div>
+                <label style="font-size: 20px;">Enter user name</label>
+                <input id="un" name="username" type="text"/>
+            </div>
+            <div>
+                <label>Enter Password</label>
+                <input id="pw" type="password" placeholder="password"/>
+            </div>
+            <div>
+                <label>Enter Confirm Password</label>
+                <input id="cpw" type="password" placeholder="confirm password"/>
+            </div>
+            <div>
+                If already registered <a href="login.html">Click</a> to Login
+                <button type="button" onclick="validateData();">Registration</button>
+            </div>            
+        </form>
+    </body>
+</html>

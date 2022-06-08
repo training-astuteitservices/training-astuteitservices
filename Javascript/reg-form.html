@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <script>
+            function validateData() {
+            
+                var uname = document.getElementById('un').value;
+                //alert(uname); 
+                var password = document.getElementById('pw').value;
+                //alert("This is password : "+password);
+
+                var cpassword = document.getElementById('cpw').value;
+                //alert("This is cpassword : "+cpassword);
+
+                if (uname=="") {
+                    alert("The username cannot be empty!");
+                } else {
+                    alert("The username is : "+uname);
+                }
+
+                if (password!="") {
+                    alert("The password : "+password);
+                } 
+
+                if (!password=="") {
+                    alert("The password with (!) : "+password);
+                }
+                
+                if (password==123) {
+                    alert("The password is numeric : "+password);
+                }
+
+                /** if (!password=="") {
+                    alert("The password with (!) : "+password);
+                }
+
+                if (!password=="") {
+                    alert("The password with (!) : "+password);
+                }
+
+                if (!password=="") {
+                    alert("The password with (!) : "+password);
+                } */
+                
+           }
+        </script>
+    </head>
+    <body align="center">
+        <h1 style="font-style: italic;">Registration Form</h1>
+        <form align="center">
+            <div>
+                <label style="font-size: 20px;">Enter user name</label>
+                <input id="un" name="username" type="text"/>
+            </div>
+            <div>
+                <label>Enter Password</label>
+                <input id="pw" type="password" placeholder="password"/>
+            </div>
+            <div>
+                <label>Enter Confirm Password</label>
+                <input id="cpw" type="password" placeholder="confirm password"/>
+            </div>
+            <div>
+                If already registered <a href="login.html">Click</a> to Login
+                <button type="button" onclick="validateData();">Registration</button>
+            </div>            
+        </form>
+    </body>
+</html>

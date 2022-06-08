@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            function loopUntil() {
+                var number1 = document.getElementById('num1').value;
+                var parsedNum1 = parseInt(number1);
+                
+                while (parsedNum1<=10) {
+                    document.write("Counter : "+parsedNum1);
+                    document.write("</br>");
+                    parsedNum1++;
+                }
+
+                do {
+                    document.write("d Counter : "+parsedNum1);
+                    document.write("</br>");
+                    parsedNum1++;
+                } while (parsedNum1<=10);
+           }
+
+        </script>
+    </head>
+    <body align="center">
+        <h1 style="font-style: italic;">Operators Ex</h1>
+        <form align="center">
+            <div>
+                <label style="font-size: 20px;">Number1</label>
+                <input id="num1" name="num1" type="text"/>
+            </div>
+            <div>
+                <button type="button" onclick="loopUntil();">printUntil</button>
+            </div>            
+        </form>
+    </body>
+</html>

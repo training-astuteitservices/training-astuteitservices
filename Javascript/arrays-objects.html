@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            function getcurrdt(){
+                var currentDate = new Date();
+                alert(currentDate.getDate());
+                alert(currentDate.getMonth());
+                alert(currentDate.getMonth()+1);
+                alert(currentDate.getFullYear());
+                var month = currentDate.getMonth()+1;
+                alert(currentDate.getDate()+"-"+month+"-"+currentDate.getFullYear());
+                //document.getElementById("currentdt").innerText=currentDate.getDate()+"-"+month+"-"+currentDate.getFullYear();
+                //document.write(currentDate.getDate()+"-"+month+"-"+currentDate.getFullYear());
+                //alert(currentDate.getDate()+"/"+Month+"/"+currentDate.getFullYear());
+            }
+
+            function getNames(){
+                var name="ABC";
+                var phn=876543;
+                var names = ["PQR","XYZ","ABC"];
+            
+                //var uiTopics = ["html", "css", "jquery"] 
+                names.push("MNO");
+                names.sort();
+
+                //read the array values...
+                for(var i=0;i<names.length;i++){
+                    document.write(names[i]+"<br>");
+                    console.log(names[i]);
+                }
+                names.pop();
+            }        
+        </script>
+    </head>
+    <body>
+        <p id="currentdt"></p>
+        <button onclick="getcurrdt();">GetCurrentDate</button>
+        <button onclick="getNames();">GetNames</button>
+    </body>
+</html>

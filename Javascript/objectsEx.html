@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+            function createObject(){
+                let person = {
+                    firstName : "ABC",
+                    lastName : "xyz"
+                };
+                document.write(person.firstName);
+                document.write("<br>");
+                person.firstName = "ijk"
+                document.write(person.firstName);
+                document.write("<br>");
+                person.age = 10;
+                document.write(person.age);
+                document.write("<br>");
+                //document.write(person.gender);
+
+                if(person.gender in person){
+                    document.write("Gender exists!");
+                } else {
+                    document.write("Gender doesn't exists!");
+                }
+
+                delete person.firstName
+                document.write("<br>");
+                document.write(person.firstName);
+
+                document.write("<br>");
+                document.write(person.lastName);
+                test();
+            }
+
+            function test() {
+                document.write("<br>This is test function!");
+                test1("xyz", "ijk");
+            } 
+
+            function test1(firstName, lastName) {
+                document.write("<br>firstName "+firstName);
+                document.write("<br>lastName "+lastName);
+            }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="createObject();">createObject</button>
+    </body>
+</html>

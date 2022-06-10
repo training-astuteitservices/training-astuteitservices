@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function arrayWithScoreBrackets(){
+                let scores = [10,20,30];
+                document.write(scores[1]);
+            }
+            
+            function arrayWithArray(){
+                //let score = new Array(); // Empty array - let score = [];
+                let sc=new Array(3); // Initialize with size of 3
+                sc[0]=10; // index 0
+                sc[1]=20; // index 1
+                sc[2]=30; // index 2
+                document.write(sc[0]);
+                document.write("<br>");
+                sc[0]=11;
+                document.write(sc[0]);
+                document.write("<br>");
+                let scores = new Array(9,10,8,7,6); // let scores = [9,10,8,7,6]
+                document.write(scores);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <button onclick="arrayWithScoreBrackets();">arrayWithBrackets</button>
+        <button onclick="arrayWithArray();">arrayWithArray</button>
+    </body>
+</html>

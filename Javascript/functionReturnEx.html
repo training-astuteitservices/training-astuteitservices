@@ -1,0 +1,26 @@
+<html>
+   <head>  
+      <script type = "text/javascript">
+         function getFullName(first, last) {
+            var full = first + last;
+            return full;
+         }
+         function showName() {
+             var result = getFullName('John', 'Smith');
+            document.write(result);
+         }
+      </script>      
+   </head>
+   
+   <body>
+      <p>Function returning value</p>      
+      <form>
+         <input type = "button" onclick = "showName()" value = "Call Function">
+      </form>
+      
+      <!-- <form method = "POST" action = "form.py" onsubmit = "return isValidData()">
+         .......
+         <input type = "submit" value = "Submit" />
+      </form> -->
+  </body>
+</html>

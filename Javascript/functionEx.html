@@ -1,0 +1,26 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+        function greetings(name, age) {
+            document.write (name + " is " + age + " years old.");
+            printMessage();
+        }
+        
+        function printMessage() {
+            document.write ("This is default function being called from parameterized!");
+        }
+
+        function greetings(companyName, companyAge) {
+            document.write (name + " is " + age + " years old!");
+            printMessage();
+        }
+      </script>      
+   </head>
+   <body>
+      <p>Greetings function</p>      
+      <form>
+         <input type = "button" onclick = "greetings('Astute', 5)" value = "Say Hello">
+         <input type = "button" onclick = "printMessage()" value = "print message">
+      </form>
+   </body>
+</html>

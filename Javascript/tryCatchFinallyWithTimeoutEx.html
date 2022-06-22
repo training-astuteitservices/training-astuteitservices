@@ -1,0 +1,30 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+        function greetings(name, age) {
+            setTimeout(function() {
+               try {
+                  document.write (name + " is " + age + " years old.");
+                  console.log(a);
+               } catch (err) {
+                  console.log("catch executed!" );
+               }   
+            }, 3000);  
+      }
+
+         /*setTimeout(function() {
+    try {
+         // error in the code
+         } catch {
+            console.log( "error is caught" );
+         }
+      }, 3000);*/
+      </script>      
+   </head>
+   <body>
+      <p>Greetings function</p>      
+      <form>
+         <input type = "button" onclick = "greetings('Astute', 5)" value = "Say Hello">
+      </form>
+   </body>
+</html>

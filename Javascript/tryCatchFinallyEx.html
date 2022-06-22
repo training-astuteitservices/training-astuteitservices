@@ -1,0 +1,27 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+        function greetings(name, age) {
+            try {
+               document.write (name + " is " + age + " years old.");
+
+               // forgot to define variable a      
+               console.log(a);
+            }
+            catch (error) {
+               console.log('An error caught'); 
+               console.log('Error message: ' + error);  
+            }
+            finally {
+               console.log('finally block always executes!'); 
+            }
+        }
+      </script>      
+   </head>
+   <body>
+      <p>Greetings function</p>      
+      <form>
+         <input type = "button" onclick = "greetings('Astute', 5)" value = "Say Hello">
+      </form>
+   </body>
+</html>

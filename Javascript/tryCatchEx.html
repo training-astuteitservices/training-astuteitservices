@@ -1,0 +1,26 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+        function greetings(name, age) {
+            try {
+               document.write (name + " is " + age + " years old.");
+
+               // forgot to define variable a      
+               //console.log(a);
+               document.write('Hello!');
+               //document.write("After the exception occured!");
+            }
+            catch(error) {
+               console.log('An error caught'); 
+               console.log('Error message: ' + error);  
+            }
+        }
+      </script>      
+   </head>
+   <body>
+      <p>Greetings function</p>      
+      <form>
+         <input type = "button" onclick = "greetings('Astute', 5)" value = "Say Hello">
+      </form>
+   </body>
+</html>

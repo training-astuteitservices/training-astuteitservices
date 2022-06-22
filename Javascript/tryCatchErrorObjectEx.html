@@ -1,0 +1,34 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+        function greetings(name, age) {
+            try {
+               document.write (name + " is " + age + " years old.");
+
+               // forgot to define variable a      
+               console.log(a);
+            }
+            catch(error) {
+               /*if (error.name instanceof ReferenceError) {
+                  document.write('abcdsadf');
+               } else {
+                  document.write('wqerwq');
+               }*/
+               alert(error.name); // ReferenceError
+               alert(error.message); // var is not defined
+               alert(error.stack); // ReferenceError: var is not defined at (...call stack)
+
+              // Can also show an error as a whole
+               // The error is converted to string as "name: message"
+               console.log('Error message: ' + error);  
+            }
+        }
+      </script>      
+   </head>
+   <body>
+      <p>Greetings function</p>      
+      <form>
+         <input type = "button" onclick = "greetings('Astute', 5)" value = "Say Hello">
+      </form>
+   </body>
+</html>

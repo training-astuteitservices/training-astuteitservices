@@ -1,0 +1,31 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+        function sayHello(firstName, lastName) {
+            var fullName = greetings(firstName, lastName);
+            document.write("fullname : "+fullName);
+        } 
+        
+        function greetings(fname, lname) {
+            try {
+               return fname+lname;
+               document.write("after return keyword in greetings!");
+               // forgot to define variable a      
+            }
+            catch(error) {
+               console.log('Error message: ' + error);  
+            }
+            finally {
+               //document.write("Inside return!");
+               console.log('finally block always executes!'); 
+            }
+        }
+      </script>      
+   </head>
+   <body>
+      <p>Greetings function</p>      
+      <form>
+         <input type = "button" onclick = "sayHello('John', 'Smith')" value = "Say Hello">
+      </form>
+   </body>
+</html>

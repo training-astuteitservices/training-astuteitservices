@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            let fruits = new Set();
+
+            let apple = { name: "Apple" };
+            let orange = { name: "Orange" };
+            let banana = { name: "Banana" };
+
+            fruits.add(apple);
+            fruits.add(orange);
+            fruits.add(banana);
+            fruits.add(apple);
+            fruits.add(banana);
+
+            // set keeps only unique values
+            alert( fruits.size ); // 3
+
+            for (let fruit of fruits) {
+                alert(fruit.name); // apple (then orange and banana)
+            }
+
+            fruits.clear();
+            alert(fruits.size);
+
+            //let set = new Set(["oranges", "apples", "bananas"]);
+            // the same with forEach:
+            //set.forEach((value, valueAgain, set) => {
+              //  alert(value);
+            //});
+         </script>
+    </head>
+</html>

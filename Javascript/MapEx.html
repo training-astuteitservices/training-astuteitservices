@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            let diffKeys = new Map();
+
+            diffKeys.set('1', 'One');   // a string key
+            diffKeys.set(1, 'One-int');     // a numeric key
+            diffKeys.set(true, 'bool1'); // a boolean key
+
+            alert( diffKeys.get(1)   ); // 'num1'
+            alert( diffKeys.get('1') ); // 'str1'
+
+            alert( diffKeys.size ); // 3
+            
+            diffKeys.delete(1);
+            alert( diffKeys.get(1)); 
+            alert( diffKeys.size ); // 2
+         </script>
+    </head>
+</html>

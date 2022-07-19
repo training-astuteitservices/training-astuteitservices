@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<title>Attr Ex</title>
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $("button").click(function(){
+         alert( "Href = " + $("#home").attr("href"));
+         alert( "Title = " + $("#home").attr("title"));
+      });
+   });
+</script>
+</head>
+<body>
+   <p>Astute IT Services</p>
+   
+   <p><a id="home" href="index.htm" title="Astute ITS">Home</a></p>
+   <button>Get Attribute</button>
+</body>
+</html>
